@@ -8,9 +8,9 @@ public class Coin : MonoBehaviour
 	private void OnTriggerEnter(Collider other)
 	{
         var root = other.transform.root;
-        if (root.CompareTag("Player"))
+        if (root.TryGetComponent<PlayerInventory>(out var playerInventory))
 		{
-            root.GetComponent<PlayerInventory>().AddGold(1);
+			playerInventory.AddGold(1);
 			Instantiate(pickupEffect, transform.position, transform.rotation);
 			Destroy(gameObject);
 		}

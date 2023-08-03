@@ -29,6 +29,8 @@ public class AIBoatBasic : Actor
 		}
     }
 
+	public override void OnTakeDamage(){}
+
 	public override void OnDeath()
 	{
         DestroyBoat();

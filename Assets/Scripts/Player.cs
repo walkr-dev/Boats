@@ -4,13 +4,27 @@ using UnityEngine;
 
 public class Player : Actor
 {
+	public GameObject playerBoatPrefab;
+	public GameObject currentPlayer;
+	public Transform spawnPosition;
+
 	public override void OnDeath()
 	{
-		Debug.Log("Player ded.");
+		Destroy(currentPlayer);
+		// drop % of coins?
+		RespawnPlayer();
 	}
 
-	public override void Start() {}
+	private void RespawnPlayer()
+	{
+		currentPlayer = Instantiate(playerBoatPrefab, spawnPosition.position, spawnPosition.rotation,gameObject.transform);
+	}
+
+	public override void OnTakeDamage(){}
+
+	public override void Start() {
+		RespawnPlayer();
+	}
 
 	public override void Update() {}
-
 }

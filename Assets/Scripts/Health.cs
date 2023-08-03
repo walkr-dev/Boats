@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
 	public void TakeDamage(int damage)
 	{
 		health -= damage;
+		actor.OnTakeDamage();
 		if (health < 0) actor.OnDeath();
 	}
 
