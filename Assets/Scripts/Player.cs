@@ -8,10 +8,25 @@ public class Player : Actor
 	public GameObject currentPlayer;
 	public Transform spawnPosition;
 
+	PlayerInventory inventory;
+
 	public override void OnDeath()
 	{
+		//TODO: get rid of hacky transform child stuff, yuck
+		var deathLocation = currentPlayer.transform.GetChild(0).position;
+		if (inventory.Gold > 0)
+		{
+			var goldLost = Mathf.Max(1, inventory.Gold / 3);
+			CoinUtility.SpawnCoinsAroundArea(deathLocation, goldLost);
+			inventory.RemoveGold(goldLost);
+		}
 		Destroy(currentPlayer);
-		// drop % of coins?
+		RespawnPlayer();
+	}
+
+	IEnumerator RespawnPlayerAfterDelay(float delay)
+	{
+		yield return new WaitForSeconds(delay);
 		RespawnPlayer();
 	}
 
@@ -24,6 +39,7 @@ public class Player : Actor
 
 	public override void Start() {
 		RespawnPlayer();
+		inventory = GetComponent<PlayerInventory>();
 	}
 
 	public override void Update() {}

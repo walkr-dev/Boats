@@ -12,7 +12,7 @@ public class AIBoatWeapon : MonoBehaviour
     public float fireTimer = 0;
     public float delay = 1.25f;
 
-    bool CanFire => Time.time >= fireTimer;
+    bool canFire => Time.time >= fireTimer;
 
     void Update()
     {
@@ -31,7 +31,7 @@ public class AIBoatWeapon : MonoBehaviour
         }
 
         AimWeapon(target.transform.position);
-        if (CanFire && isPlayerWithinRange(target.transform))
+        if (canFire && isPlayerWithinRange(target.transform))
 		{
             FireWeapon();
 		}

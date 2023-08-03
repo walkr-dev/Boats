@@ -9,10 +9,15 @@ public class VehicleWeapon : MonoBehaviour
     public GameObject projectile;
     public Transform firePosition;
 
+    public float fireRate = 0.25f;
+    public float fireTimer = 0;
+
+    bool canFire => Time.time >= fireTimer;
+
     void Update()
     {
         // TODO: automatic weapons...
-        if (Input.GetKeyDown(fireWeapon))
+        if (Input.GetKey(fireWeapon))
 		{
             HandleWeaponFire();
 		}
@@ -20,7 +25,11 @@ public class VehicleWeapon : MonoBehaviour
 
     void HandleWeaponFire()
 	{
-        Instantiate(projectile, firePosition.position, firePosition.rotation);
+        if (canFire)
+		{
+            Instantiate(projectile, firePosition.position, firePosition.rotation);
+            fireTimer = Time.time + fireRate;
+		}
 	}
 
 }

@@ -3,7 +3,7 @@ using UnityEngine.AI;
 
 public class AIBoatBasic : Actor
 {
-    public float value = 5;
+    public int value = 5;
 
     public NavMeshAgent agent;
 
@@ -38,6 +38,7 @@ public class AIBoatBasic : Actor
 
 	public void DestroyBoat()
 	{
+        CoinUtility.SpawnCoinsAroundArea(transform.position, value);
 		for (int i = 0; i < value; i++)
 		{
             var randomPosition = Random.insideUnitCircle * Random.Range(1,5);
