@@ -21,7 +21,7 @@ public class Player : Actor
 			inventory.RemoveGold(goldLost);
 		}
 		Destroy(currentPlayer);
-		RespawnPlayer();
+		RespawnPlayerAfterDelay(3);
 	}
 
 	IEnumerator RespawnPlayerAfterDelay(float delay)

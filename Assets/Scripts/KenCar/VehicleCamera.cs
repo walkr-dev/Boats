@@ -21,6 +21,8 @@ public class VehicleCamera : MonoBehaviour{
 	[Range(1, 20)] public float rotationSpeed = 12;
 	
 	public bool followRotation = true;
+
+	public GameObject player;
 	
 	// Private
 	
@@ -70,11 +72,13 @@ public class VehicleCamera : MonoBehaviour{
 	}
 	
 	void FixedUpdate(){
-		
+
+		player = GameObject.FindWithTag("Player"); 
+		if (!player) return;
+
 		// Camera follow
-		
-		rig.position = Vector3.Lerp(rig.position, transform.position + cameraPositionOffset, Time.deltaTime * followSpeed);
-		if(followRotation){ rig.rotation = Quaternion.Lerp(rig.rotation, Quaternion.Euler(transform.eulerAngles + cameraRotationOffset), Time.deltaTime * rotationSpeed); }
+		rig.position = Vector3.Lerp(rig.position, player.transform.position + cameraPositionOffset, Time.deltaTime * followSpeed);
+		if(followRotation){ rig.rotation = Quaternion.Lerp(rig.rotation, Quaternion.Euler(player.transform.eulerAngles + cameraRotationOffset), Time.deltaTime * rotationSpeed); }
 		
 	}
 	
