@@ -30,17 +30,23 @@ public class Player : Actor
 		RespawnPlayer();
 	}
 
-	private void RespawnPlayer()
+	void RespawnPlayer()
 	{
-		currentPlayer = Instantiate(playerBoatPrefab, spawnPosition.position, spawnPosition.rotation,gameObject.transform);
+		SetPlayerObject(Instantiate(playerBoatPrefab, spawnPosition.position, spawnPosition.rotation, gameObject.transform));
 	}
 
 	public override void OnTakeDamage(){}
 
 	public override void Start() {
-		RespawnPlayer();
 		inventory = GetComponent<PlayerInventory>();
+		RespawnPlayer();
 	}
 
+
+	void SetPlayerObject(GameObject player)
+	{
+		currentPlayer = player;
+		inventory.player = player;
+	}
 	public override void Update() {}
 }
