@@ -47,6 +47,7 @@ public class Player : Actor
 	{
 		currentPlayer = player;
 		inventory.player = player;
+		inventory.OnPlayerRespawn();
 	}
 	public override void Update() {}
 }

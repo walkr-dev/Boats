@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
@@ -35,6 +33,11 @@ public class PlayerInventory : MonoBehaviour
 			return;
 		}
 		if (gold - amount >= 0) gold -= amount;
+		CheckGoldThresholds();
+	}
+
+	public void OnPlayerRespawn()
+	{
 		CheckGoldThresholds();
 	}
 
