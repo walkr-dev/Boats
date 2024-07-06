@@ -1,31 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerObjective : MonoBehaviour
 {
 
-    Objective currentObjective;
+    public Objective currentObjective;
+
+    List<Transform> potentialObjectiveLocations;
 
 	void SetObjective(Objective objective)
 	{
-
+        currentObjective = objective;
 	}
 
     // Start is called before the first frame update
     void Start()
     {
+        potentialObjectiveLocations = GameObject.FindGameObjectsWithTag("Objective").Select(g => g.transform).ToList();
+        
         if (currentObjective == null)
         {
             SetObjective(GetRandomObjective());
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // objective text
-        // objective direction / destination (if applicable)
     }
 
     public Objective GetRandomObjective()
@@ -43,6 +41,11 @@ public class PlayerObjective : MonoBehaviour
                 return deliveryObjective;
 		}
 	}
+
+    Transform getObjectiveLocationTransform()
+    {
+        return potentialObjectiveLocations.First();
+    }
 }
 
 public enum ObjectiveState {
@@ -87,7 +90,6 @@ class DeliveryObjective : Objective
 	{
 		pickupLoc = pickupLocation;
         destLoc = destinationLocation;
-
 	}
 
 	public override void OnStarted()
