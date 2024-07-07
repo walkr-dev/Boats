@@ -145,7 +145,7 @@ Material:
     - _BlendColor: {r: 0.7266196, g: 0.8083077, b: 0.83137256, a: 1}
     - _BumpDirection: {r: 1.53, g: 1, b: -1, a: 1}
     - _BumpTiling: {r: 1, g: 1, b: -2, a: 3}
-    - _Color: {r: 0.3504361, g: 0.6289173, b: 0.7075472, a: 1}
+    - _Color: {r: 0, g: 0.7960785, b: 0.9921569, a: 1}
     - _ColorEnd: {r: 0, g: 0, b: 1, a: 1}
     - _ColorStart: {r: 0.5, g: 0.5, b: 1, a: 1}
     - _DepthGradientDeep: {r: 0.4481132, g: 0.6423396, b: 1, a: 0.749}
@@ -161,3 +161,4 @@ Material:
     - _SurfaceNoiseScroll: {r: 0.03, g: 0.03, b: 0, a: 0}
     - _Tint: {r: 0.24029905, g: 0.31360996, b: 0.3773585, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

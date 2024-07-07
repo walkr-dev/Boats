@@ -244,5 +244,10 @@ public class Vehicle : MonoBehaviour{
 		transform.rotation = rotation;
 		
 	}
+
+	public void SetSpeedTarget()
+	{
+		speedTarget = speedTarget * 2;
+	}
 	
 }
