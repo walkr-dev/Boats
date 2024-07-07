@@ -792,7 +792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 877843624009841344}
   m_Layer: 0
-  m_Name: projectileSpawnPoint
+  m_Name: stage1projectileSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -854,7 +854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8610359257746710721}
   m_Layer: 0
-  m_Name: projectileSpawnPoint
+  m_Name: stage2projectileSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7862,9 +7862,16 @@ MonoBehaviour:
   fireWeapon: 32
   projectile: {fileID: 7490535143562241774, guid: cc71b78cb5e88434696e55b8c710f41e,
     type: 3}
-  firePosition: {fileID: 877843624009841344}
+  upgradedProjectile: {fileID: 0}
+  firePosition1: {fileID: 877843624009841344}
+  firePosition2: {fileID: 0}
+  firePosition3: {fileID: 0}
+  firePosition4: {fileID: 0}
+  firePosition5: {fileID: 0}
   fireRate: 0.25
   fireTimer: 0
+  weaponStage: 0
+  stageVisuals: []
 --- !u!114 &4254754853607582742
 MonoBehaviour:
   m_ObjectHideFlags: 0
