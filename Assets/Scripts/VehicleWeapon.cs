@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class VehicleWeapon : MonoBehaviour
@@ -17,6 +18,8 @@ public class VehicleWeapon : MonoBehaviour
 	public Transform firePosition5;
 	public Transform firePosition6;
 
+    public GameObject upgradeVisual;
+
 
 	public float fireRate = 0.25f;
     public float fireTimer = 0;
@@ -33,6 +36,11 @@ public class VehicleWeapon : MonoBehaviour
 		{
             HandleWeaponFire();
 		}
+
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            UpgradeWeaponStage();
+        }
     }
     
     public void UpgradeWeaponStage()
@@ -46,8 +54,10 @@ public class VehicleWeapon : MonoBehaviour
             go.SetActive(false);
         }
 
+        Instantiate(upgradeVisual, transform.position, transform.rotation);
         stageVisuals[weaponStage].SetActive(true);
     }
+
 
     void HandleWeaponFire()
 	{
