@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9117447358414665466}
   - component: {fileID: 136146815352587864}
   - component: {fileID: 6299000172292730732}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mesh4_Group5_Group1_Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,6 +58,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -94,7 +97,7 @@ GameObject:
   - component: {fileID: 9010186358490582878}
   - component: {fileID: 6230107160620529508}
   - component: {fileID: 2728915921601008408}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mesh3_Group4_Group1_Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,6 +144,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -178,7 +184,7 @@ GameObject:
   - component: {fileID: 8252745533499594268}
   - component: {fileID: 6433342511609688963}
   - component: {fileID: 5043834924597743400}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mesh5_Group1_Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,6 +231,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -288,7 +297,7 @@ GameObject:
   - component: {fileID: 2735421135117037933}
   - component: {fileID: 200399317566566640}
   - component: {fileID: 2250402210725596337}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mesh1_Group2_Group1_Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,6 +344,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -372,7 +384,7 @@ GameObject:
   - component: {fileID: 1659673944585505450}
   - component: {fileID: 8870093943871699301}
   - component: {fileID: 7141600913786934810}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: AIBoat_Passive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,8 +427,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 5
   agent: {fileID: 7141600913786934810}
-  coinObject: {fileID: 8413637214001124828, guid: 0b53855d3b4109d45a1d01b9fc490be7,
-    type: 3}
 --- !u!195 &7141600913786934810
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -450,7 +460,7 @@ GameObject:
   - component: {fileID: 6750919993382196202}
   - component: {fileID: 6641278034385991503}
   - component: {fileID: 8592352716939382279}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mesh2_Group3_Group1_Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,6 +507,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -535,6 +548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: smoke (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085124426081358666, guid: 65050511caf66a344b533a4abafce6a5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7882677662561371813, guid: 65050511caf66a344b533a4abafce6a5,
         type: 3}
@@ -609,6 +627,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: smoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 6085124426081358666, guid: 65050511caf66a344b533a4abafce6a5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7882677662561371813, guid: 65050511caf66a344b533a4abafce6a5,
         type: 3}

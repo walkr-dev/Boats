@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour
 	public GameObject explosionEffect;
 	public bool selfDestruct;
 	public float selfDestructTime = 5;
+	public float radius = 1;
+	public LayerMask hitLayerMask;
 
 	private void Awake()
 	{
@@ -21,16 +23,21 @@ public class Projectile : MonoBehaviour
 
 	private void OnCollisionEnter(Collision collision)
 	{
-		Health actorHealth;
-		if (!collision.gameObject.transform.CompareTag("Player") && collision.gameObject.transform.root.TryGetComponent(out actorHealth))
-		{
-			actorHealth.TakeDamage(1);
-		}
 		OnProjectileDestroy();
 	}
 
 	void OnProjectileDestroy()
 	{
+		var affectedList = Physics.OverlapSphere(transform.position, radius, hitLayerMask);
+
+		foreach (var affected in affectedList)
+		{
+			if (affected.gameObject.transform.root.TryGetComponent<Health>(out var actorHealth))
+			{
+				actorHealth.TakeDamage(1);
+			}
+		}
+
 		Instantiate(explosionEffect, transform.position, transform.rotation);
 		Destroy(gameObject);
 		StopCoroutine(SelfDestruct());

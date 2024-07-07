@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3736737375177596512}
   - component: {fileID: 6585389324101133490}
   - component: {fileID: 8550679489450356972}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mesh1_Group1_Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,6 +59,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -123,7 +126,7 @@ GameObject:
   - component: {fileID: 3807196358173561854}
   - component: {fileID: 1446740121014766052}
   - component: {fileID: 6443401138833148707}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: AIBoat_Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446106357016524668}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.79986525, z: -0, w: 0.6001797}
+  m_LocalRotation: {x: 0, y: 0.79986274, z: 0, w: 0.60018295}
   m_LocalPosition: {x: -20.26, y: -0.58, z: 25.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -161,8 +164,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 10
   agent: {fileID: 3807196358173561854}
-  coinObject: {fileID: 8413637214001124828, guid: 0b53855d3b4109d45a1d01b9fc490be7,
-    type: 3}
 --- !u!195 &3807196358173561854
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -199,7 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   turretTransform: {fileID: 7729344207554951360}
-  projectile: {fileID: 7490535143562241774, guid: cc71b78cb5e88434696e55b8c710f41e,
+  projectile: {fileID: 7490535143562241774, guid: 5d17c959e3056e54688e4a211325e009,
     type: 3}
   playerAcquireRange: 10
   fireTimer: 0
@@ -216,6 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590e03c182eab0a4eac4b7a849337a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 3
   health: 3
   actor: {fileID: 7176806246877309684}
 --- !u!1001 &7840376519946166059
@@ -295,6 +297,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: weapon_cannon
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 975b34549794d2a4eb2b2db694d83272,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607668393258877731, guid: 975b34549794d2a4eb2b2db694d83272,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7687833984507530404, guid: 975b34549794d2a4eb2b2db694d83272,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
