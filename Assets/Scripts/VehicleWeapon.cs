@@ -12,6 +12,10 @@ public class VehicleWeapon : MonoBehaviour
     public float fireRate = 0.25f;
     public float fireTimer = 0;
 
+    public int weaponStage = 0;
+    const int MAX_WEAPON_STAGE = 4;
+    public List<GameObject> stageVisuals = new List<GameObject>();
+
     bool canFire => Time.time >= fireTimer;
 
     void Update()
@@ -21,6 +25,11 @@ public class VehicleWeapon : MonoBehaviour
 		{
             HandleWeaponFire();
 		}
+    }
+    
+    public void UpgradeWeaponStage()
+    {
+
     }
 
     void HandleWeaponFire()

@@ -31,7 +31,7 @@ public class Player : Actor
 		DropCoins();
 		Destroy(currentPlayer);
 		lives--;
-		if (lives > 0)
+		if (lives < 0)
 		{
 			//dead dead
 			return;

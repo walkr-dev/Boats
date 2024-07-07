@@ -22,7 +22,7 @@ public class Projectile : MonoBehaviour
 	private void OnCollisionEnter(Collision collision)
 	{
 		Health actorHealth;
-		if (collision.gameObject.transform.root.TryGetComponent(out actorHealth))
+		if (!collision.gameObject.transform.CompareTag("Player") && collision.gameObject.transform.root.TryGetComponent(out actorHealth))
 		{
 			actorHealth.TakeDamage(1);
 		}
