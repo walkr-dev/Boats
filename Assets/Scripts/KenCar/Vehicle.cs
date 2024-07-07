@@ -131,7 +131,7 @@ public class Vehicle : MonoBehaviour{
 		
 		// Stops vehicle from floating around when standing still
 		
-		if(speed == 0 && sphere.velocity.magnitude < 4f){ sphere.velocity = Vector3.Lerp(sphere.velocity, Vector3.zero, Time.deltaTime * 2.0f); }
+		if(speed == 0 && sphere.linearVelocity.magnitude < 4f){ sphere.linearVelocity = Vector3.Lerp(sphere.linearVelocity, Vector3.zero, Time.deltaTime * 2.0f); }
 		
 	}
 	
@@ -170,12 +170,12 @@ public class Vehicle : MonoBehaviour{
 		
 		// Simulated drag on ground thanks to Adam Hunt
 		
-		Vector3 localVelocity = transform.InverseTransformVector(sphere.velocity);
+		Vector3 localVelocity = transform.InverseTransformVector(sphere.linearVelocity);
 		localVelocity.x *= 0.9f + (drift / 10);
 		
 		if(nearGround){
 			
-			sphere.velocity = transform.TransformVector(localVelocity);
+			sphere.linearVelocity = transform.TransformVector(localVelocity);
 			
 		}
 		
@@ -223,7 +223,7 @@ public class Vehicle : MonoBehaviour{
 	
 	void OnTriggerEnter(Collider other){
 		
-		if(other.GetComponent<PhysicsObject>()){ other.GetComponent<PhysicsObject>().Hit(sphere.velocity); }
+		if(other.GetComponent<PhysicsObject>()){ other.GetComponent<PhysicsObject>().Hit(sphere.linearVelocity); }
 		
     }
 	
@@ -235,7 +235,7 @@ public class Vehicle : MonoBehaviour{
 		
 		speed = rotate = 0.0f;
 		
-		sphere.velocity = Vector3.zero;
+		sphere.linearVelocity = Vector3.zero;
 		sphere.position = position;
 		
 		// Set new position
