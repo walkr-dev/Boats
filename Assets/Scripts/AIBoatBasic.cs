@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class AIBoatBasic : Actor
 {
     public int value = 5;
-    public Vector2 rangeMinMax = new Vector2(10, 20);
+    public Vector2 rangeMinMax = new Vector2(30, 50);
     
     [Range(1, 10)]
     public float agentSpeed = 3.5f;
