@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 2647459}
   - component: {fileID: 2647458}
   m_Layer: 5
-  m_Name: PlayerLifeModel (3)
+  m_Name: PlayerLifeModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2415,7 +2415,7 @@ GameObject:
   - component: {fileID: 1776704586}
   - component: {fileID: 1776704585}
   m_Layer: 5
-  m_Name: PlayerLifeModel (4)
+  m_Name: PlayerLifeModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3156,8 +3156,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102426391}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.19776244, y: -0, z: -0.00000011175868, w: 0.98025}
-  m_LocalPosition: {x: 0.00023016334, y: 0.62718105, z: 0.1510579}
+  m_LocalRotation: {x: -0.08031846, y: 0.00000005960463, z: -0.00000011920926, w: 0.9967693}
+  m_LocalPosition: {x: 0.00043504685, y: -0.2632331, z: 0.010908872}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3165,7 +3165,7 @@ Transform:
   - {fileID: 2647457}
   - {fileID: 1776704584}
   m_Father: {fileID: 954741727}
-  m_LocalEulerAnglesHint: {x: 22.812, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -9.214, y: 0, z: 0}
 --- !u!23 &632970629879556430
 MeshRenderer:
   m_ObjectHideFlags: 0
