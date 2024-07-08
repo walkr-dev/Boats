@@ -34,9 +34,12 @@ public class VehicleCamera : MonoBehaviour{
 	// Functions
 	
 	void Awake(){
-		
+
+		// Get rig
+		rig = GameObject.FindWithTag("PlayerCameraRig").transform;
+
 		// Remember offset set in editor
-		
+
 		cameraPositionOffset = rig.localPosition;
 		cameraRotationOffset = rig.localEulerAngles;
 		
