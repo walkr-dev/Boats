@@ -10,7 +10,8 @@ public class Player : Actor
 	public Transform spawnPosition;
 	public Vehicle playerVehicle;
 	public VehicleWeapon weapon;
-
+	
+	RegeneratingHealth health;
 	PlayerInventory inventory;
 
 	// powerups
@@ -19,6 +20,14 @@ public class Player : Actor
 
 	const int MAX_LIVES = 3;
 	public int lives = MAX_LIVES;
+
+	public override void Start()
+	{
+		inventory = GetComponent<PlayerInventory>();
+		health = GetComponent<RegeneratingHealth>();
+		spawnPosition = GameObject.FindWithTag("PlayerSpawn").transform;
+		RespawnPlayer();
+	}
 
 	public void AddLife()
 	{
@@ -54,12 +63,6 @@ public class Player : Actor
 
 	public override void OnTakeDamage(){}
 
-	public override void Start() {
-		inventory = GetComponent<PlayerInventory>();
-		RespawnPlayer();
-	}
-
-
 	void SetPlayerObject(GameObject player)
 	{
 		currentPlayer = player;
@@ -67,7 +70,9 @@ public class Player : Actor
 		inventory.OnPlayerRespawn();
 		playerVehicle = player.GetComponentInChildren<Vehicle>();
 		weapon = player.GetComponentInChildren<VehicleWeapon>();
+		player.GetComponentInChildren<PlayerHealthVisuals>().playerHealth = health;
 	}
+
 	public override void Update() {}
 
 	private void DropCoins()

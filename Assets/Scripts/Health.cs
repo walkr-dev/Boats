@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-	public int maxHealth = 3;
-	public int health = 3;
+	public float maxHealth = 3;
+	public float health = 3;
 
 	public Actor actor;
 	
-	public void TakeDamage(int damage)
+	public virtual void TakeDamage(float damage)
 	{
 		health -= damage;
 		actor.OnTakeDamage();
