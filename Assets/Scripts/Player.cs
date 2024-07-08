@@ -25,7 +25,7 @@ public class Player : Actor
 	{
 		inventory = GetComponent<PlayerInventory>();
 		health = GetComponent<RegeneratingHealth>();
-		spawnPosition = GameObject.FindWithTag("PlayerSpawn").transform;
+		spawnPosition = GameObject.FindWithTag("SpawnPoint").transform;
 		RespawnPlayer();
 	}
 
