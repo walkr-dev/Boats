@@ -32,7 +32,6 @@ public class Projectile : MonoBehaviour
 
 		foreach (var affected in affectedList)
 		{
-			Debug.Log("Hit", affected);
 			if (affected.gameObject.transform.root.TryGetComponent<Health>(out var actorHealth))
 			{
 				actorHealth.TakeDamage(1);
