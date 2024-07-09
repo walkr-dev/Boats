@@ -43,11 +43,6 @@ public class VehicleWeapon : MonoBehaviour
 		{
             HandleWeaponFire();
 		}
-
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            UpgradeWeaponStage();
-        }
     }
     
     public void UpgradeWeaponStage()
