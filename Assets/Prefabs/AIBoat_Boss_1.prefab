@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2817750359422898080}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000035762784}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 94.81862, y: -0.11670685, z: 183.70808}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -79,6 +79,9 @@ MonoBehaviour:
   rangeMinMax: {x: 50, y: 80}
   agentSpeed: 3.5
   homePosition: {fileID: 0}
+  lootList:
+  - {fileID: 3974932307518177167, guid: 3682b7942365d9040a880a2231eb50dc, type: 3}
+  - {fileID: 5318698318152742833, guid: 7104b1eee3f8d084fb3d8eef594ad7be, type: 3}
 --- !u!114 &8997779760023583866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,8 +94,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590e03c182eab0a4eac4b7a849337a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
-  health: 20
+  maxHealth: 1
+  health: 1
   actor: {fileID: 599087065734905845}
 --- !u!114 &8081883183976973128
 MonoBehaviour:

@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices.WindowsRuntime;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -13,6 +15,8 @@ public class AIBoatBasic : Actor
     private Vector3 destination;
 
     public GameObject homePosition;
+
+    public GameObject [] lootList;
 
     public override void Start()
     {
@@ -44,6 +48,7 @@ public class AIBoatBasic : Actor
 	public override void OnDeath()
 	{
         DestroyBoat();
+        GimmeTheLoot();
 	}
 
 	public void DestroyBoat()
@@ -51,4 +56,13 @@ public class AIBoatBasic : Actor
         CoinUtility.SpawnCoinsAroundArea(transform.position, value);
         Destroy(gameObject);
 	}
+
+    private void GimmeTheLoot(){
+        if(lootList.Length.Equals(0)) return;
+
+        foreach (var item in lootList)
+        {
+            Instantiate(item, transform.position, Quaternion.identity);
+        }
+    }
 }

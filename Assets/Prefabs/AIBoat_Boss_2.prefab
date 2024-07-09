@@ -555,6 +555,9 @@ MonoBehaviour:
   rangeMinMax: {x: 30, y: 60}
   agentSpeed: 3.5
   homePosition: {fileID: 0}
+  lootList:
+  - {fileID: 5318698318152742833, guid: 7104b1eee3f8d084fb3d8eef594ad7be, type: 3}
+  - {fileID: 3974932307518177167, guid: 3682b7942365d9040a880a2231eb50dc, type: 3}
 --- !u!114 &1307580399680062263
 MonoBehaviour:
   m_ObjectHideFlags: 0
