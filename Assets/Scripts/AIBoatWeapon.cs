@@ -51,7 +51,8 @@ public class AIBoatWeapon : MonoBehaviour
 
     void FireWeapon()
 	{
-        Instantiate(projectile, turretTransform.position + turretTransform.forward * 1.25f, turretTransform.rotation);
+        var cannonball = Instantiate(projectile, turretTransform.position + turretTransform.forward * 1.25f, turretTransform.rotation);
+        cannonball.GetComponent<Projectile>().AddForce(5000);
         fireTimer = Time.time + delay;
 	}
 

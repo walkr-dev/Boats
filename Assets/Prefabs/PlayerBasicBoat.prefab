@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 541489556110332583}
   - component: {fileID: 1166041347610003424}
   - component: {fileID: 7215625866411209783}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 213731447365916056}
   - component: {fileID: 3480707382313713131}
   - component: {fileID: 662226964553140417}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 4473316368083631860}
   - component: {fileID: 2860902808313952163}
   - component: {fileID: 6322217442372248665}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4466766746675355245}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 436697935075063613}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CoinVisuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4149489865280192902}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ GameObject:
   - component: {fileID: 6500384649298500086}
   - component: {fileID: 2384473260642362529}
   - component: {fileID: 412968909895203022}
-  m_Layer: 2
+  m_Layer: 10
   m_Name: sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +459,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4912353054318739094}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HealthVisuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 7960380174891938430}
   - component: {fileID: 6074524896885363047}
   - component: {fileID: 816254308987176174}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cannonRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 6685515903518678735}
   - component: {fileID: 1442717136497340906}
   - component: {fileID: 7000288446400527693}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cannonRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,7 +668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4946916051440478492}
-  m_Layer: 2
+  m_Layer: 10
   m_Name: trails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -703,7 +703,7 @@ GameObject:
   - component: {fileID: 6725369622298073145}
   - component: {fileID: 7321763500614002739}
   - component: {fileID: 8117304926220365231}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -788,7 +788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 877843624009841344}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage1projectileSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -803,13 +803,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920390680664498842}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9990483, z: -0.043619405, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0, z: -0.496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8292442111424472903}
-  m_LocalEulerAnglesHint: {x: -5, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &1979447552424412111
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1560591054141866654}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage4projectileSpawnPointL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -834,13 +834,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979447552424412111}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9990483, z: -0.043619405, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: -0.00000002167647, y: 0.00000001445098, z: -0.496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6353323252833871991}
-  m_LocalEulerAnglesHint: {x: -5, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &2067296933743727320
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,7 +850,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8610359257746710721}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage2projectileSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -865,13 +865,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067296933743727320}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9990483, z: -0.043619405, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0, z: -0.496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 23702806419920738}
-  m_LocalEulerAnglesHint: {x: -5, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &2215822725090612792
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,7 +881,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3555567965518937990}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: weaponParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,7 +917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1547117271530562271}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Medium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -951,7 +951,7 @@ GameObject:
   - component: {fileID: 3678399125190750324}
   - component: {fileID: 5284776860648555610}
   - component: {fileID: 5162879043570665383}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1037,7 +1037,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6809813681294299965}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1074,7 +1074,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8503561857419117095}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage5projectileSpawnPointRR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1105,7 +1105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1156387432402114470}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MediumHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1140,7 +1140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5897712847001003223}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage4projectileSpawnPointRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1171,7 +1171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4963892550145204463}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage5projectileSpawnPointL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1186,13 +1186,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3644066428578497335}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9990483, z: -0.043619405, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0, z: -0.496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6285767124955407839}
-  m_LocalEulerAnglesHint: {x: -5, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &3659605348803981927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,7 +1202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2521676440278929977}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage5projectileSpawnPointR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1217,13 +1217,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3659605348803981927}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9990483, z: -0.043619405, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0, z: -0.496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6742342858569844115}
-  m_LocalEulerAnglesHint: {x: -5, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &3685729412669542300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,7 +1235,7 @@ GameObject:
   - component: {fileID: 23702806419920738}
   - component: {fileID: 3299996170078619458}
   - component: {fileID: 8428162114471947506}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1322,7 +1322,7 @@ GameObject:
   - component: {fileID: 959720709199167785}
   - component: {fileID: 5513326800387188966}
   - component: {fileID: 1913785592507401706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cannonR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1409,7 +1409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6877098673914019390}
   - component: {fileID: 8916900788563284903}
-  m_Layer: 2
+  m_Layer: 10
   m_Name: trailLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1547,7 +1547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2256332992644427725}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage5projectileSpawnPointRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1580,7 +1580,7 @@ GameObject:
   - component: {fileID: 5774991802023185874}
   - component: {fileID: 2598603515928384196}
   - component: {fileID: 2737225060730032045}
-  m_Layer: 2
+  m_Layer: 10
   m_Name: smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6432,7 +6432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7869331243850385044}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6468,7 +6468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6953397915588222073}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6502,7 +6502,7 @@ GameObject:
   - component: {fileID: 1197765609247086015}
   - component: {fileID: 8823222875248031551}
   - component: {fileID: 5709718215201189314}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cannonRR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6590,7 +6590,7 @@ GameObject:
   - component: {fileID: 7638777404931752521}
   - component: {fileID: 6989438661653453902}
   - component: {fileID: 2763999339049652937}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6675,7 +6675,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5812063329681874283}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage3projectileSpawnPointL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6690,13 +6690,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4950713162754006445}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9990483, z: -0.043619405, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0, z: -0.496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6301786649047504267}
-  m_LocalEulerAnglesHint: {x: -5, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &4985326701571660585
 GameObject:
   m_ObjectHideFlags: 0
@@ -6708,7 +6708,7 @@ GameObject:
   - component: {fileID: 1704555703933579193}
   - component: {fileID: 1027848946732404313}
   - component: {fileID: 8166035389607330335}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cannonR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6794,7 +6794,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7100389762360815558}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6831,7 +6831,7 @@ GameObject:
   - component: {fileID: 6306931949630620926}
   - component: {fileID: 8926059231031326172}
   - component: {fileID: 8041892274171977491}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6918,7 +6918,7 @@ GameObject:
   - component: {fileID: 7408930571767603192}
   - component: {fileID: 8021015431581923839}
   - component: {fileID: 441543341060299403}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7008,7 +7008,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7537548240095748710}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7057,7 +7057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5937941149134787131}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Large
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7089,7 +7089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6068558573356002506}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7121,7 +7121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6839095108802826856}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7198,7 +7198,7 @@ GameObject:
   - component: {fileID: 1029181316321909144}
   - component: {fileID: 5876243719459550472}
   - component: {fileID: 3824443659398013661}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7283,7 +7283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7411574069648517264}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBasicBoat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7318,7 +7318,7 @@ GameObject:
   - component: {fileID: 6353323252833871991}
   - component: {fileID: 519570205393734102}
   - component: {fileID: 6683234312645997058}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7403,7 +7403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2978516419376208444}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LowHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7438,7 +7438,7 @@ GameObject:
   - component: {fileID: 4896854020869919060}
   - component: {fileID: 7883178000253111694}
   - component: {fileID: 4443507853480909705}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cannonRR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7524,7 +7524,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7178766284036565863}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage3projectileSpawnPointR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7539,13 +7539,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6148542006300287494}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9990483, z: -0.043619405, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0, z: -0.496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4473316368083631860}
-  m_LocalEulerAnglesHint: {x: -5, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &6194492094775015177
 GameObject:
   m_ObjectHideFlags: 0
@@ -7556,7 +7556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2507868469357421835}
   - component: {fileID: 1785299282540749241}
-  m_Layer: 2
+  m_Layer: 10
   m_Name: trailRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7696,7 +7696,7 @@ GameObject:
   - component: {fileID: 6438347930676990728}
   - component: {fileID: 3220429283687577071}
   - component: {fileID: 7160744634784615417}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cannonR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7939,7 +7939,7 @@ GameObject:
   - component: {fileID: 6285767124955407839}
   - component: {fileID: 1248912242653442643}
   - component: {fileID: 6480982532476543226}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8024,7 +8024,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4138416546102606102}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage4projectileSpawnPointR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8039,13 +8039,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6932223189165040824}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9990483, z: -0.043619405, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: -0, z: -0.496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1029181316321909144}
-  m_LocalEulerAnglesHint: {x: -5, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &7316040322877738886
 GameObject:
   m_ObjectHideFlags: 0
@@ -8055,7 +8055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1758572757610612539}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8089,7 +8089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7793060034464942687}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage4projectileSpawnPointRR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8122,7 +8122,7 @@ GameObject:
   - component: {fileID: 4825214793886709931}
   - component: {fileID: 896757913239574228}
   - component: {fileID: 5976476612441479621}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cannonL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8208,7 +8208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4726163837087743625}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stage3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8243,7 +8243,7 @@ GameObject:
   - component: {fileID: 8292442111424472903}
   - component: {fileID: 7589984272746577648}
   - component: {fileID: 6287764772207643712}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8330,7 +8330,7 @@ GameObject:
   - component: {fileID: 4506998338599854868}
   - component: {fileID: 3664228156907649844}
   - component: {fileID: 1890408299641637253}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cannonL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8418,7 +8418,7 @@ GameObject:
   - component: {fileID: 6301786649047504267}
   - component: {fileID: 7487451527870555434}
   - component: {fileID: 8872713277677145493}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8505,7 +8505,7 @@ GameObject:
   - component: {fileID: 6742342858569844115}
   - component: {fileID: 1427354156278465839}
   - component: {fileID: 4363958100160098522}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8592,7 +8592,7 @@ GameObject:
   - component: {fileID: 8814754809559815283}
   - component: {fileID: 3507215513593348320}
   - component: {fileID: 3319901624329762893}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cannonL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8747,6 +8747,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8835,6 +8840,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8925,6 +8935,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9013,6 +9028,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9103,6 +9123,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9127,10 +9152,30 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684677543225702287, guid: c4ed38c72957f2241ad144a1614956d9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8764043878647920493, guid: c4ed38c72957f2241ad144a1614956d9,
         type: 3}
       propertyPath: m_Name
       value: CFXR Fire Breath (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764043878647920493, guid: c4ed38c72957f2241ad144a1614956d9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764373218812076563, guid: c4ed38c72957f2241ad144a1614956d9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764473058345964675, guid: c4ed38c72957f2241ad144a1614956d9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8767152486562788127, guid: c4ed38c72957f2241ad144a1614956d9,
         type: 3}
@@ -9301,6 +9346,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9389,6 +9439,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9479,6 +9534,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9567,6 +9627,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9657,6 +9722,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9745,6 +9815,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9835,6 +9910,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9923,6 +10003,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10013,6 +10098,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10101,6 +10191,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10191,6 +10286,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10279,6 +10379,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10369,6 +10474,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10457,6 +10567,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: sword_scimitar
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f1c225f5167d4b64a95dd78da8e2a365,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10547,6 +10662,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10635,6 +10755,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10725,6 +10850,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10813,6 +10943,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10903,6 +11038,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10991,6 +11131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11081,6 +11226,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11170,6 +11320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11194,10 +11349,30 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684677543225702287, guid: c4ed38c72957f2241ad144a1614956d9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8764043878647920493, guid: c4ed38c72957f2241ad144a1614956d9,
         type: 3}
       propertyPath: m_Name
       value: CFXR Fire Breath
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764043878647920493, guid: c4ed38c72957f2241ad144a1614956d9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764373218812076563, guid: c4ed38c72957f2241ad144a1614956d9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764473058345964675, guid: c4ed38c72957f2241ad144a1614956d9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8767152486562788127, guid: c4ed38c72957f2241ad144a1614956d9,
         type: 3}
@@ -11368,6 +11543,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11456,6 +11636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11546,6 +11731,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11634,6 +11824,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11724,6 +11919,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11812,6 +12012,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11902,6 +12107,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11921,15 +12131,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1156387432402114470}
     m_Modifications:
+    - target: {fileID: 3199283261846579216, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4893118513826488101, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4893118513826488103, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6294508012652817957, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294508012652817959, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6294508013172393185, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
@@ -12005,6 +12230,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CFXR Fire (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7539286505454239565, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
@@ -12105,6 +12335,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12193,6 +12428,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12283,6 +12523,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12372,6 +12617,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12391,15 +12641,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1156387432402114470}
     m_Modifications:
+    - target: {fileID: 3199283261846579216, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4893118513826488101, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4893118513826488103, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6294508012652817957, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294508012652817959, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6294508013172393185, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
@@ -12475,6 +12740,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CFXR Fire (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7539286505454239565, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
@@ -12575,6 +12845,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12664,6 +12939,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12683,15 +12963,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1156387432402114470}
     m_Modifications:
+    - target: {fileID: 3199283261846579216, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4893118513826488101, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4893118513826488103, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6294508012652817957, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294508012652817959, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6294508013172393185, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
@@ -12767,6 +13062,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CFXR Fire (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7539286505454239565, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
@@ -12867,6 +13167,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: paddle
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2b6e698a605220e4694fdbb3f119d740,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -12960,6 +13265,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13048,6 +13358,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13138,6 +13453,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13226,6 +13546,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13316,6 +13641,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13404,6 +13734,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13494,6 +13829,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13583,6 +13923,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13602,15 +13947,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1156387432402114470}
     m_Modifications:
+    - target: {fileID: 3199283261846579216, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4893118513826488101, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4893118513826488103, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6294508012652817957, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294508012652817959, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6294508013172393185, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
@@ -13686,6 +14046,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CFXR Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7539286505454239565, guid: 043176b6a68be2b43b073aaaa4782c7d,
         type: 3}
@@ -13786,6 +14151,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13874,6 +14244,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13964,6 +14339,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14052,6 +14432,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14142,6 +14527,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14230,6 +14620,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14320,6 +14715,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14408,6 +14808,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14498,6 +14903,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14586,6 +14996,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
         type: 3}
@@ -14681,6 +15096,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14769,6 +15189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14859,6 +15284,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14947,6 +15377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15037,6 +15472,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15125,6 +15565,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15215,6 +15660,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15303,6 +15753,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15393,6 +15848,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15482,6 +15942,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coinGold (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15570,6 +16035,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: coinGold (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b30a8e65a5ba2b14a8c81104b78f4e38,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
