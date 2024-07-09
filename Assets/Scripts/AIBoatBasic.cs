@@ -1,17 +1,24 @@
 using UnityEngine;
 using UnityEngine.AI;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class AIBoatBasic : Actor
 {
     public int value = 5;
-    public Vector2 rangeMinMax = new Vector2(10, 20);
-    public NavMeshAgent agent;
+    public Vector2 rangeMinMax = new Vector2(30, 50);
+    
+    [Range(1, 10)]
+    public float agentSpeed = 3.5f;
+    private NavMeshAgent _agent;
     private Vector3 destination;
 
     public GameObject homePosition;
 
     public override void Start()
     {
+        _agent = GetComponent<NavMeshAgent>();
+        _agent.speed = agentSpeed;
+
         ChooseNewLocation();
     }
 
@@ -21,12 +28,12 @@ public class AIBoatBasic : Actor
 
         destination = homepoint + new Vector3(Random.insideUnitCircle.x, 0, Random.insideUnitCircle.y) * Random.Range(rangeMinMax.x, rangeMinMax.y);
 
-        agent.destination = destination;
+        _agent.SetDestination(destination);
     }
 
     public override void Update()
     {
-        if (agent.remainingDistance < 0.01)
+        if (_agent.remainingDistance < 0.01)
 		{
             ChooseNewLocation();
 		}

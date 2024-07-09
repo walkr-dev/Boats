@@ -5,6 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
 	public float initialForce = 5000;
+	public bool forceExternallySet = false;
 	public GameObject explosionEffect;
 	public bool selfDestruct;
 	public float selfDestructTime = 5;
@@ -13,12 +14,16 @@ public class Projectile : MonoBehaviour
 
 	private void Awake()
 	{
-		var rb = GetComponent<Rigidbody>();
-		rb.AddForce(transform.forward * initialForce);
 		if (selfDestruct)
 		{
 			StartCoroutine(SelfDestruct());
 		}
+	}
+
+	public void AddForce(float force)
+	{
+		var rb = GetComponent<Rigidbody>();
+		rb.AddForce(transform.forward * force);
 	}
 
 	private void OnCollisionEnter(Collision collision)

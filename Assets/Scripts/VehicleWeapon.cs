@@ -30,7 +30,14 @@ public class VehicleWeapon : MonoBehaviour
 
     bool canFire => Time.time >= fireTimer;
 
-    void Update()
+    Rigidbody rb;
+
+	private void Awake()
+	{
+        rb = transform.root.GetComponentInChildren<Rigidbody>();
+	}
+
+	void Update()
     {
         if (Input.GetKey(fireWeapon))
 		{
@@ -61,33 +68,34 @@ public class VehicleWeapon : MonoBehaviour
 
     void HandleWeaponFire()
 	{
-        var projectileToFire = weaponStage > 0 ? upgradedProjectile : projectile;
+        var force = Mathf.Abs(rb.linearVelocity.magnitude) + 1700;
+        var isUpgraded = weaponStage > 0;
 
         if (canFire)
 		{
             switch (weaponStage)
             {
                 case 0:
-					Instantiate(projectileToFire, firePosition1.position, firePosition1.rotation);
+					SpawnCannonBallWithForce(force, isUpgraded, firePosition1.position, firePosition1.rotation);
                     break;
                 case 1:
-					Instantiate(projectileToFire, firePosition2.position, firePosition2.rotation);
+					SpawnCannonBallWithForce(force, isUpgraded, firePosition2.position, firePosition2.rotation);
 					break;
 				case 2:
-					Instantiate(projectileToFire, firePosition3.position, firePosition3.rotation);
-					Instantiate(projectileToFire, firePosition4.position, firePosition4.rotation);
+					SpawnCannonBallWithForce(force, isUpgraded, firePosition3.position, firePosition3.rotation);
+					SpawnCannonBallWithForce(force, isUpgraded, firePosition4.position, firePosition4.rotation);
 					break;
 				case 3:
-					Instantiate(projectileToFire, firePosition3.position, firePosition3.rotation);
-					Instantiate(projectileToFire, firePosition4.position, firePosition4.rotation);
-					Instantiate(projectileToFire, firePosition5.position, firePosition5.rotation);
-					Instantiate(projectileToFire, firePosition6.position, firePosition6.rotation);
+					SpawnCannonBallWithForce(force, isUpgraded, firePosition3.position, firePosition3.rotation);
+					SpawnCannonBallWithForce(force, isUpgraded, firePosition4.position, firePosition4.rotation);
+					SpawnCannonBallWithForce(force, isUpgraded, firePosition5.position, firePosition5.rotation);
+					SpawnCannonBallWithForce(force, isUpgraded, firePosition6.position, firePosition6.rotation);
 					break;
 				case 4:
-					Instantiate(projectileToFire, firePosition3.position, firePosition3.rotation);
-					Instantiate(projectileToFire, firePosition4.position, firePosition4.rotation);
-					Instantiate(projectileToFire, firePosition5.position, firePosition5.rotation);
-					Instantiate(projectileToFire, firePosition6.position, firePosition6.rotation);
+					SpawnCannonBallWithForce(force, isUpgraded, firePosition3.position, firePosition3.rotation);
+					SpawnCannonBallWithForce(force, isUpgraded, firePosition4.position, firePosition4.rotation);
+					SpawnCannonBallWithForce(force, isUpgraded, firePosition5.position, firePosition5.rotation);
+					SpawnCannonBallWithForce(force, isUpgraded, firePosition6.position, firePosition6.rotation);
 					break;
 				default:
                     break;
@@ -96,5 +104,11 @@ public class VehicleWeapon : MonoBehaviour
             fireTimer = Time.time + fireRate;
 		}
 	}
+
+    void SpawnCannonBallWithForce(float force, bool isUpgraded, Vector3 position, Quaternion rotation)
+    {
+        var cannonball = Instantiate(isUpgraded ? upgradedProjectile : projectile, position, rotation);
+        cannonball.GetComponent<Projectile>().AddForce(force);
+    }
 
 }

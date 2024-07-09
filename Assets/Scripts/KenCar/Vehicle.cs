@@ -90,6 +90,7 @@ public class Vehicle : MonoBehaviour{
 		speedTarget = Mathf.SmoothStep(speedTarget, speed, Time.deltaTime * 12f); speed = 0f;
 		
 		if(Input.GetKey(accelerate)){ ControlAccelerate(); }
+		if(Input.GetKeyUp(accelerate)) { smoke.Pause(); }
 		if(Input.GetKey(brake)){ ControlBrake(); }
 		
 		// Steering
@@ -110,7 +111,7 @@ public class Vehicle : MonoBehaviour{
 		if(wheelFrontLeft != null){  wheelFrontLeft.localRotation  = Quaternion.Euler(0, rotateTarget / 2, 0); }
 		if(wheelFrontRight != null){ wheelFrontRight.localRotation = Quaternion.Euler(0, rotateTarget / 2, 0); }
 		
-		body.localRotation = Quaternion.Slerp(body.localRotation, Quaternion.Euler(new Vector3(speedTarget / 4, 0, rotateTarget / 6)), Time.deltaTime * 4.0f);
+		//body.localRotation = Quaternion.Slerp(body.localRotation, Quaternion.Euler(new Vector3(speedTarget / 4, 0, rotateTarget / 6)), Time.deltaTime * 4.0f);
 		
 		// Vehicle tilt
 		
@@ -189,6 +190,7 @@ public class Vehicle : MonoBehaviour{
 		
 		speed = acceleration;
 		
+		smoke.Play();
 	}
 	
 	public void ControlBrake(){
