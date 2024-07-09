@@ -90,7 +90,7 @@ public class Vehicle : MonoBehaviour{
 		speedTarget = Mathf.SmoothStep(speedTarget, speed, Time.deltaTime * 12f); speed = 0f;
 		
 		if(Input.GetKey(accelerate)){ ControlAccelerate(); }
-		if(Input.GetKeyUp(accelerate)) { smoke.Pause(); }
+		if(Input.GetKeyUp(accelerate)) { smoke.Stop(); }
 		if(Input.GetKey(brake)){ ControlBrake(); }
 		
 		// Steering
