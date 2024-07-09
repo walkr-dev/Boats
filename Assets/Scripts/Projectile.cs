@@ -12,6 +12,8 @@ public class Projectile : MonoBehaviour
 	public float radius = 1;
 	public LayerMask hitLayerMask;
 
+	public int damage = 1;
+
 	private void Awake()
 	{
 		if (selfDestruct)
@@ -39,7 +41,7 @@ public class Projectile : MonoBehaviour
 		{
 			if (affected.gameObject.transform.root.TryGetComponent<Health>(out var actorHealth))
 			{
-				actorHealth.TakeDamage(1);
+				actorHealth.TakeDamage(damage);
 			}
 		}
 
