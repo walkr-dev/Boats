@@ -1,6 +1,5 @@
+using Assets.Scripts;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : Actor
@@ -14,6 +13,8 @@ public class Player : Actor
 	RegeneratingHealth health;
 	PlayerInventory inventory;
 
+	PlayerLivesVisual livesVisual;
+
 	// powerups
 	public bool isBoosting = false;
 	public bool canBoost = false;
@@ -26,13 +27,20 @@ public class Player : Actor
 		inventory = GetComponent<PlayerInventory>();
 		health = GetComponent<RegeneratingHealth>();
 		spawnPosition = GameObject.FindWithTag("SpawnPoint").transform;
+		livesVisual = GameObject.FindWithTag("UI").GetComponentInChildren<PlayerLivesVisual>();
+		livesVisual.OnLifeStateChanged(lives);
 		RespawnPlayer();
 	}
 
 	public void AddLife()
 	{
 		lives++;
-		if (lives > MAX_LIVES) lives = MAX_LIVES;
+		if (lives > MAX_LIVES)
+		{
+			lives = MAX_LIVES;
+			return;
+		}
+		livesVisual.OnLifeStateChanged(lives);
 	}
 
 	public override void OnDeath()
@@ -46,6 +54,7 @@ public class Player : Actor
 			//dead dead
 			return;
 		}
+		livesVisual.OnLifeStateChanged(lives);
 		StartCoroutine(RespawnPlayerAfterDelay(3));
 	}
 
