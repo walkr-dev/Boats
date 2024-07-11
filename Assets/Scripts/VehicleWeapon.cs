@@ -31,12 +31,13 @@ public class VehicleWeapon : MonoBehaviour
     bool canFire => Time.time >= fireTimer;
 
     Rigidbody rb;
-    AudioSource audioSource;
+    public AudioSource fireAudioSource;
+    public AudioSource upgradeAudioSource;
+
 
 	private void Awake()
 	{
         rb = transform.root.GetComponentInChildren<Rigidbody>();
-        audioSource = GetComponent<AudioSource>();
 	}
 
 	void Update()
@@ -52,6 +53,8 @@ public class VehicleWeapon : MonoBehaviour
         if (weaponStage == MAX_WEAPON_STAGE) return;
 
         weaponStage++;
+
+        upgradeAudioSource.Play();
 
         foreach (GameObject go in stageVisuals)
         {
@@ -106,7 +109,7 @@ public class VehicleWeapon : MonoBehaviour
     {
         var cannonball = Instantiate(isUpgraded ? upgradedProjectile : projectile, position, rotation);
         cannonball.GetComponent<Projectile>().AddForce(force);
-        audioSource.Play();
+        fireAudioSource.Play();
     }
 
 }

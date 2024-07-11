@@ -5060,7 +5060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10887b840ab8b97408cb55fda188bf6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupEffect: {fileID: 395031058680739610, guid: b2f0b8902a31c8a46a1c4bb24ed9ea36,
+  pickupEffect: {fileID: 395031058680739610, guid: 617a3128d233d134bb014fa71f263362,
     type: 3}
 --- !u!54 &962327255028339991
 Rigidbody:
@@ -15119,7 +15119,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 0.385, g: 1, b: 0.59, a: 1}
-  m_Intensity: 1.3993441
+  m_Intensity: 0
   m_Range: 8
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
