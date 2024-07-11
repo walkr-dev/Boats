@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class VehicleAudio : MonoBehaviour
 {
-    float topSpeed = 35;
+    float topSpeed = 45;
     float currentSpeed = 0;
     float pitch = 0;
 
