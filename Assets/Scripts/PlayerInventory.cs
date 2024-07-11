@@ -8,8 +8,6 @@ public class PlayerInventory : MonoBehaviour
 
 	public GameObject player;
 
-
-
 	public int Gold { 
 		get
 		{
