@@ -18,10 +18,16 @@ public class AIBoatBasic : Actor
 
     public GameObject [] lootList;
 
+    public bool isBoss;
+    public bool isFinalBoss;
+    private Player playerRef;
+
     public override void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
         _agent.speed = agentSpeed;
+
+        playerRef = FindFirstObjectByType<Player>();
 
         ChooseNewLocation();
     }
@@ -59,6 +65,15 @@ public class AIBoatBasic : Actor
 
     private void GimmeTheLoot(){
         if(lootList.Length.Equals(0)) return;
+        
+        if(isBoss) {
+            playerRef.bossKills++;
+
+            if(isFinalBoss) {
+                playerRef.inventory.AddGold(value);
+                playerRef.AVENGERSENDGAME();
+            }
+        }
 
         foreach (var item in lootList)
         {
