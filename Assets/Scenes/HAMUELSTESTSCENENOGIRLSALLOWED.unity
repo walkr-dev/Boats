@@ -265,10 +265,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6266971482670380860, guid: d9431da741a3f994f8ea8fe056db7864,
+    - target: {fileID: 6798579822594462681, guid: d9431da741a3f994f8ea8fe056db7864,
         type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -30
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991789889}
+    - target: {fileID: 6850278392531049633, guid: d9431da741a3f994f8ea8fe056db7864,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 266
+      objectReference: {fileID: 0}
+    - target: {fileID: 6850278392531049633, guid: d9431da741a3f994f8ea8fe056db7864,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 266
       objectReference: {fileID: 0}
     - target: {fileID: 6911061245862200793, guid: d9431da741a3f994f8ea8fe056db7864,
         type: 3}
@@ -1783,6 +1793,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.37100002, y: 1.858, z: 0.080000006}
   m_TimeToStationary: 0.5
+--- !u!114 &991789889 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 342489274060024625, guid: 102279bfab66a304bb06e691860d9dd4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1082635517}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf7b822dac41c548a3d46263963c33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1021974012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2005,6 +2027,12 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 0c485cef7068db7458c44f133d3081be, type: 2}
   m_BuildHeightMesh: 0
+--- !u!1 &1053072592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7260217306037231416, guid: d9431da741a3f994f8ea8fe056db7864,
+    type: 3}
+  m_PrefabInstance: {fileID: 97149404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1082635517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2013,6 +2041,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 342489274060024625, guid: 102279bfab66a304bb06e691860d9dd4,
+        type: 3}
+      propertyPath: endGameCanvas
+      value: 
+      objectReference: {fileID: 1053072592}
     - target: {fileID: 7287013781527418393, guid: 102279bfab66a304bb06e691860d9dd4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4305,6 +4338,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 599087065734905845, guid: 719040e61822d9e408b119ca229a8a87,
         type: 3}
+      propertyPath: isFinalBoss
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 599087065734905845, guid: 719040e61822d9e408b119ca229a8a87,
+        type: 3}
       propertyPath: homePosition
       value: 
       objectReference: {fileID: 1111838185}
@@ -4362,6 +4400,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997779760023583866, guid: 719040e61822d9e408b119ca229a8a87,
+        type: 3}
+      propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997779760023583866, guid: 719040e61822d9e408b119ca229a8a87,
+        type: 3}
+      propertyPath: maxHealth
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
