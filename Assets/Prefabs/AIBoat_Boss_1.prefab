@@ -81,7 +81,9 @@ MonoBehaviour:
   homePosition: {fileID: 0}
   lootList:
   - {fileID: 3974932307518177167, guid: 3682b7942365d9040a880a2231eb50dc, type: 3}
-  - {fileID: 5318698318152742833, guid: 7104b1eee3f8d084fb3d8eef594ad7be, type: 3}
+  - {fileID: 199319301267659722, guid: f0a1d92488a6fb14bb8e97b18e967a09, type: 3}
+  isBoss: 1
+  isFinalBoss: 0
 --- !u!114 &8997779760023583866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590e03c182eab0a4eac4b7a849337a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
-  health: 1
+  maxHealth: 20
+  health: 20
   actor: {fileID: 599087065734905845}
 --- !u!114 &8081883183976973128
 MonoBehaviour:
