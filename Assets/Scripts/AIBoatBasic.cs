@@ -19,7 +19,6 @@ public class AIBoatBasic : Actor
     public GameObject [] lootList;
 
     public bool isBoss;
-    public bool isFinalBoss;
     private Player playerRef;
 
     public override void Start()
@@ -66,14 +65,7 @@ public class AIBoatBasic : Actor
     private void GimmeTheLoot(){
         if(lootList.Length.Equals(0)) return;
         
-        if(isBoss) {
-            playerRef.bossKills++;
-
-            if(isFinalBoss) {
-                playerRef.inventory.AddGold(value);
-                playerRef.AVENGERSENDGAME();
-            }
-        }
+        if(isBoss) playerRef.UpdateBossKills();
 
         foreach (var item in lootList)
         {
