@@ -3,8 +3,11 @@ using UnityEngine;
 
 public class VehicleAudio : MonoBehaviour
 {
-    Rigidbody rb;
+    float topSpeed = 35;
+    float currentSpeed = 0;
+    float pitch = 0;
 
+    Rigidbody rb;
     public AudioSource engineAudio;
 
     void Start()
@@ -15,6 +18,8 @@ public class VehicleAudio : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-        engineAudio.pitch = Mathf.Clamp(rb.linearVelocity.magnitude, 0, 2);
+        currentSpeed = rb.linearVelocity.magnitude * 3.6f;
+        pitch = currentSpeed / topSpeed;
+        engineAudio.pitch = pitch;
     }
 }
