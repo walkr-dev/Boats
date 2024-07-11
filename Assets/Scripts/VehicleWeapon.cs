@@ -31,10 +31,12 @@ public class VehicleWeapon : MonoBehaviour
     bool canFire => Time.time >= fireTimer;
 
     Rigidbody rb;
+    AudioSource audioSource;
 
 	private void Awake()
 	{
         rb = transform.root.GetComponentInChildren<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
 	}
 
 	void Update()
@@ -104,6 +106,7 @@ public class VehicleWeapon : MonoBehaviour
     {
         var cannonball = Instantiate(isUpgraded ? upgradedProjectile : projectile, position, rotation);
         cannonball.GetComponent<Projectile>().AddForce(force);
+        audioSource.Play();
     }
 
 }

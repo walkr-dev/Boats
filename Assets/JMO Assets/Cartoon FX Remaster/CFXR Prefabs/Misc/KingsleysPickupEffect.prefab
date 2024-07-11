@@ -4743,6 +4743,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 2175ac793e235894da12a78ea274cb1f, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4807,9 +4808,9 @@ GameObject:
   - component: {fileID: 395031058661699194}
   - component: {fileID: 395031058661726170}
   - component: {fileID: 114285716909035918}
-  - component: {fileID: 6060207018560352085}
+  - component: {fileID: 970963483639999306}
   m_Layer: 0
-  m_Name: CFXR Smoke Poof
+  m_Name: KingsleysPickupEffect
   m_TagString: FxTemporaire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9469,6 +9470,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 7840d900dc0a4ed4dbcd26e23f064dd8, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9569,7 +9571,7 @@ MonoBehaviour:
     shakesDelay: 0
   animatedLights: []
   fadeOutReference: {fileID: 0}
---- !u!82 &6060207018560352085
+--- !u!82 &970963483639999306
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
