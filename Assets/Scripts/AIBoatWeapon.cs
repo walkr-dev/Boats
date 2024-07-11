@@ -11,6 +11,7 @@ public class AIBoatWeapon : MonoBehaviour
     public float playerAcquireRange = 10;
     public float fireTimer = 0;
     public float delay = 1.25f;
+    public float projectileSpeed = 1000f;
 
     bool canFire => Time.time >= fireTimer;
 
@@ -48,11 +49,10 @@ public class AIBoatWeapon : MonoBehaviour
         turretTransform.LookAt(position);
 	}
 
-
     void FireWeapon()
 	{
         var cannonball = Instantiate(projectile, turretTransform.position + turretTransform.forward * 1.25f, turretTransform.rotation);
-        cannonball.GetComponent<Projectile>().AddForce(1000);
+        cannonball.GetComponent<Projectile>().AddForce(projectileSpeed);
         fireTimer = Time.time + delay;
 	}
 
