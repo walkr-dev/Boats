@@ -49,7 +49,6 @@ public class AIBoatWeapon : MonoBehaviour
         turretTransform.LookAt(position);
 	}
 
-
     void FireWeapon()
 	{
         var cannonball = Instantiate(projectile, turretTransform.position + turretTransform.forward * 1.25f, turretTransform.rotation);
