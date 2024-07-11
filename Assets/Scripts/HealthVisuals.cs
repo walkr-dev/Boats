@@ -1,26 +1,29 @@
 using UnityEngine;
 
-public class PlayerHealthVisuals : MonoBehaviour
+public class HealthVisuals : MonoBehaviour
 {
     public float mediumHealthThreshold = 2.8f;
     public float lowHealthThreshold = 1.8f;
 
-    [HideInInspector] public RegeneratingHealth playerHealth;
+    public Health health;
 
 	public GameObject lowHealthThresholdVisual;
 	public GameObject mediumHealthThresholdVisual;
 
 	private void Update()
 	{
-		if ( playerHealth.health < lowHealthThreshold )
+		if ( health.health < lowHealthThreshold )
 		{
 			lowHealthThresholdVisual.SetActive(true);
+			return;
 		}
 		
-		if ( playerHealth.health < mediumHealthThreshold )
+		if ( health.health < mediumHealthThreshold )
 		{
 			lowHealthThresholdVisual.SetActive(true);
+			return;
 		}
+
 
 		else
 		{

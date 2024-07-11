@@ -93,7 +93,7 @@ public class Player : Actor
 		inventory.OnPlayerRespawn();
 		playerVehicle = player.GetComponentInChildren<Vehicle>();
 		weapon = player.GetComponentInChildren<VehicleWeapon>();
-		player.GetComponentInChildren<PlayerHealthVisuals>().playerHealth = health;
+		player.GetComponentInChildren<HealthVisuals>().health = health;
 	}
 
 	public override void Update() {}
