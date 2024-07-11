@@ -24,12 +24,14 @@ public class Player : Actor
 	const int MAX_LIVES = 3;
 	public int lives = MAX_LIVES;
 
-	public int bossKills = 0;
+	private int bossKills = 0;
+    private int maxBossKills = 2;
 	public GameObject endGameCanvas;
+	private TextMeshProUGUI mainText;
 	private TextMeshProUGUI coinText;
 	private TextMeshProUGUI bossText;
 
-	public override void Start()
+    public override void Start()
 	{
 		inventory = GetComponent<PlayerInventory>();
 		health = GetComponent<RegeneratingHealth>();
@@ -37,6 +39,7 @@ public class Player : Actor
 		livesVisual = GameObject.FindWithTag("UI").GetComponentInChildren<PlayerLivesVisual>();
 		livesVisual.OnLifeStateChanged(lives);
 		endGameCanvas.SetActive(false);
+		mainText = endGameCanvas.transform.Find("MainText").GetComponent<TextMeshProUGUI>();
 		coinText = endGameCanvas.transform.Find("CoinText").GetComponent<TextMeshProUGUI>();
 		bossText = endGameCanvas.transform.Find("BossText").GetComponent<TextMeshProUGUI>();
 		RespawnPlayer();
@@ -62,6 +65,7 @@ public class Player : Actor
 		if (lives < 0)
 		{
 			//dead dead
+			AVENGERSENDGAME(false);
 			return;
 		}
 		livesVisual.OnLifeStateChanged(lives);
@@ -105,8 +109,16 @@ public class Player : Actor
 		}
 	}
 
-	public void AVENGERSENDGAME(){
+	public void UpdateBossKills() {
+		bossKills++;
+		if(bossKills >= maxBossKills) {
+			inventory.AddGold(100);
+			AVENGERSENDGAME(true);
+		}
+	}
+	public void AVENGERSENDGAME(bool didWin) {
 		endGameCanvas.SetActive(true);
+		mainText.text = didWin ? $"WINNER IS YOU" : $"SORRY YOU LOSE :(";
 		coinText.text = $"you collected {inventory.Gold} coins! nice";
 		bossText.text = $"you bonked {bossKills} bosses! yippee";
 	}
